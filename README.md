@@ -1,4 +1,4 @@
-![image]([https://raw.githubusercontent.com/sp1r1tt/game-dashboard/refs/heads/main/game.png]
+![image](https://raw.githubusercontent.com/sp1r1tt/game-dashboard/refs/heads/main/game.png)
 
 # Game Dashboard
 
