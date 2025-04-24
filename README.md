@@ -75,7 +75,7 @@ To run the project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/game-dashboard.git
+   git clone https://github.com/sp1r1tt/game-dashboard.git
    cd game-dashboard
    Install Dependencies:
    npm install
