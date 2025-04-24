@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/eaf1d28b-0ce4-4fa3-8b49-51d94a534409)
+
 # Game Dashboard
 
 Game Dashboard is a Progressive Web App (PWA) built with Next.js and Tailwind CSS, designed to display a game leaderboard and market items. The application supports offline functionality, caching data for seamless use without an internet connection. It provides a responsive, dark-themed user interface with tabs for navigating between the leaderboard and market sections.
