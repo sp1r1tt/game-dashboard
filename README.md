@@ -85,3 +85,28 @@ To run the project locally, follow these steps:
    Build for Production:
    npm run build
    npm run start
+   
+## Usage
+
+To interact with the Game Dashboard, follow these steps:
+
+- **Access the App**: Open the app in a browser at `http://localhost:3000` during development.
+- **Navigate Tabs**: Use the "Leaderboard" and "Market" tabs to switch between views displaying player rankings and market items.
+- **Refresh Data**: Click the "Refresh" button to fetch the latest data from the API. A loading spinner indicates the refresh is in progress.
+- **Offline Mode**: Disconnect from the internet to test offline functionality. Cached data will be displayed, and an offline warning will appear in the UI.
+- **Install as PWA**: On supported browsers, look for the "Install" prompt or add the app to your home screen (on mobile devices) to use it as a standalone application.
+
+## API Integration
+
+The Game Dashboard fetches data from the following API endpoints:
+
+- **Leaderboard**: `https://api-game.bloque.app/game/leaderboard`
+  - **Response**: Returns a `LeaderboardResponse` containing an array of `Player` objects with details like rank, username, level, XP, and gold.
+- **Market**: `https://api-game.bloque.app/game/market`
+  - **Response**: Returns a `MarketResponse` containing an array of `MarketItem` objects with details like id, name, type, description, and cost.
+
+The `fetchLeaderboard` and `fetchMarket` functions in `lib/api.ts` manage data retrieval with the following features:
+
+- **API Requests with Retry Logic**: Automatically retries failed API requests up to 2 times to handle transient network issues.
+- **Caching**: Uses the Cache API to store responses, enabling offline access to previously fetched data.
+- **Error Handling**: Falls back to empty data (`{ players: [] }` or `{ items: [] }`) when offline and no cached data is available, with user-friendly error messages displayed in the UI.
