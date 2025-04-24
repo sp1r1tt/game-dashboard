@@ -60,6 +60,28 @@ The project leverages modern web development technologies to ensure performance,
   - `react-hook-form`: Included for potential form handling (not used in the current codebase but available for future features).
   - `autoprefixer` and `postcss`: Enhance CSS compatibility and processing.
 
-## Project Structure
 
-The project follows a standard Next.js structure with additional organization for components, utilities, and configuration:
+## Installation and Setup
+
+To run the project locally, follow these steps:
+
+### Prerequisites
+
+- **Node.js**: Version 18 or higher.
+- **npm**: Included with Node.js, or use `pnpm`/`yarn` if preferred.
+- A modern web browser (Chrome, Firefox, Edge, etc.) for PWA testing.
+
+### Steps
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/game-dashboard.git
+   cd game-dashboard
+   Install Dependencies:
+   npm install
+   un the Development Server:
+   npm run dev
+   The app will be available at http://localhost:3000.
+   Build for Production:
+   npm run build
+   npm run start
